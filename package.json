@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@types/node": "20.4.5",
@@ -17,6 +18,11 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "styled-components": "^6.0.5",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
   }
 }
