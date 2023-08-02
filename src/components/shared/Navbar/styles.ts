@@ -7,13 +7,19 @@ interface StyledHamburgerMenuProps {
 
 export const StyledWrapper = styled.div`
   position: fixed;
-  top: 0;
+  top: 1em;
   left: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   transform: translateX(-50%);
+  /* backdrop-filter: brightness(90%) blur(20px); */
+  /* -webkit-backdrop-filter: brightness(90%) blur(20px); */
+  /* -moz-backdrop-filter: brightness(90%) blur(20px); */
+  z-index: 99;
+  /* padding: 1em 2em; */
+  border-radius: 1em;
 `;
 
 export const StyledLogo = styled.div`
