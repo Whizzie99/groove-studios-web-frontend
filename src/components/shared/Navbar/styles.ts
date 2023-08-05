@@ -14,9 +14,9 @@ export const StyledWrapper = styled.div`
   align-items: center;
   width: 90%;
   transform: translateX(-50%);
-  /* backdrop-filter: brightness(90%) blur(20px); */
-  /* -webkit-backdrop-filter: brightness(90%) blur(20px); */
-  /* -moz-backdrop-filter: brightness(90%) blur(20px); */
+  /* backdrop-filter: brightness(90%) blur(20px);
+  -webkit-backdrop-filter: brightness(90%) blur(20px);
+  -moz-backdrop-filter: brightness(90%) blur(20px); */
   z-index: 99;
   /* padding: 1em 2em; */
   border-radius: 1em;

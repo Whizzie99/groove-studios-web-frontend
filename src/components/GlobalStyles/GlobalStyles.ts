@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     --pink: #D8A3A3;
     --gray-1: #e5e5e5;
     --gray-2: #F3F3F3;
+    --gray-3: #E4DEDE;
   }
 
 
@@ -20,6 +21,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body{
-    background-color: var(--gray-1);
+    background-image: url('/images/patterned-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-color: var(--gray-1); */
   }
 `
