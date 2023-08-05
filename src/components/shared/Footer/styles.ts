@@ -1,5 +1,5 @@
-'use client';
-import styled from 'styled-components';
+"use client";
+import styled from "styled-components";
 
 export const StyledWrapper = styled.footer`
   background: var(--gray-3);
@@ -12,7 +12,7 @@ export const StyledFooterTop = styled.div`
   flex-direction: column;
   align-items: center;
 
-  h2{
+  h2 {
     font-family: var(--font-allura);
     text-transform: capitalize;
     width: 32%;
@@ -21,7 +21,7 @@ export const StyledFooterTop = styled.div`
     line-height: 0.9;
   }
 
-  p{
+  p {
     width: 40%;
     text-align: center;
     font-family: var(--font-raleway);
@@ -30,7 +30,7 @@ export const StyledFooterTop = styled.div`
     font-weight: 200;
   }
 
-  a{
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,16 +42,17 @@ export const StyledFooterTop = styled.div`
     text-decoration: none;
     font-size: 1.6em;
     color: var(--black);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
-
-    span{
-      &:first-child{
+    span {
+      &:first-child {
         font-family: var(--font-allura);
         text-transform: capitalize;
       }
 
-      &:last-child{
+      &:last-child {
         margin-top: 0.25em;
       }
     }
@@ -62,7 +63,6 @@ export const StyledFooterBottom = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 3em;
-
 `;
 
 export const StyledCopyright = styled.p`
@@ -77,7 +77,7 @@ export const StyledSocialMediaIcons = styled.ul`
 `;
 
 export const StyledSocialMediaIcon = styled.li`
-  a{
+  a {
     font-size: 1.5em;
     color: var(--black);
   }

@@ -5,11 +5,11 @@ import LoveStories from "@/components/LoveStories/LoveStories";
 const HomePageFragment = () => {
   return (
     <>
-      <Hero/>
-      <About/>
-      <LoveStories/>
+      <Hero />
+      <About />
+      <LoveStories />
     </>
   );
-}
+};
 
 export default HomePageFragment;

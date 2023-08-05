@@ -7,10 +7,10 @@ const LoveStories: React.FC = () => {
     <StyledWrapper>
       <Container>
         <StyledHeading>love stories</StyledHeading>
-        <LoveStoriesList/>
+        <LoveStoriesList />
       </Container>
     </StyledWrapper>
   );
-}
- 
+};
+
 export default LoveStories;

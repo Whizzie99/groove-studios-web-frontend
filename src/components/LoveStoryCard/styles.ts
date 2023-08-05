@@ -1,5 +1,5 @@
-'use client';
-import styled from 'styled-components';
+"use client";
+import styled from "styled-components";
 
 export const StyledCard = styled.div`
   display: flex;
@@ -25,14 +25,14 @@ export const StyledCardContent = styled.div`
 export const StyledContentLeft = styled.div`
   flex: 0.8;
 
-  h3{
+  h3 {
     font-family: var(--font-allura);
     font-size: 1.9em;
     color: var(--pink);
     text-transform: capitalize;
   }
 
-  p{
+  p {
     font-family: var(--font-raleway);
     font-size: 1em;
     font-weight: 200;
@@ -40,7 +40,7 @@ export const StyledContentLeft = styled.div`
     margin: 0.5em 0;
   }
 
-  a{
+  a {
     font-family: var(--font-allura);
     font-size: 1.2em;
     color: var(--pink);
@@ -54,7 +54,7 @@ export const StyledContentRight = styled.div`
   justify-content: center;
   align-items: center;
 
-  p{
+  p {
     width: 50%;
     text-align: center;
     font-family: var(--font-allura);

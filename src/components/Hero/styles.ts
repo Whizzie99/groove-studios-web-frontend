@@ -1,5 +1,5 @@
-'use client';
-import styled from 'styled-components'
+"use client";
+import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
   display: flex;
@@ -21,26 +21,26 @@ export const StyledHeroLeftContent = styled.div`
   width: 70%;
   margin-left: 10%;
 
-  h1{
+  h1 {
     font-family: var(--font-allura);
     font-size: 5em;
     text-transform: capitalize;
     color: var(--pink);
   }
 
-  p{
+  p {
     font-family: var(--font-raleway);
     font-weight: 200;
     line-height: 1.5;
     margin-top: 0.7em;
     font-size: 1.1em;
 
-    &::first-letter{
+    &::first-letter {
       text-transform: uppercase;
     }
   }
 
-  a{
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,14 +53,13 @@ export const StyledHeroLeftContent = styled.div`
     font-size: 1.6em;
     color: var(--white);
 
-
-    span{
-      &:first-child{
+    span {
+      &:first-child {
         font-family: var(--font-allura);
         text-transform: capitalize;
       }
 
-      &:last-child{
+      &:last-child {
         margin-top: 0.25em;
       }
     }

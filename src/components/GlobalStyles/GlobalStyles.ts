@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
@@ -28,4 +28,4 @@ export const GlobalStyles = createGlobalStyle`
     background-attachment: fixed;
     /* background-color: var(--gray-1); */
   }
-`
+`;

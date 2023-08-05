@@ -1,5 +1,5 @@
-'use client';
-import styled from 'styled-components';
+"use client";
+import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
   padding: 5em 0;
@@ -36,7 +36,7 @@ export const StyledImage = styled.div`
 `;
 
 export const StyledContent = styled.div`
-  h2{
+  h2 {
     font-family: var(--font-allura);
     font-size: 3em;
     color: var(--pink);
@@ -44,18 +44,18 @@ export const StyledContent = styled.div`
     margin-bottom: 0.2em;
   }
 
-  p{
+  p {
     font-family: var(--font-raleway);
     font-size: 1.1em;
     font-weight: 200;
     line-height: 2;
 
-    &::first-letter{
+    &::first-letter {
       text-transform: uppercase;
     }
   }
 
-  a{
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,14 +68,13 @@ export const StyledContent = styled.div`
     font-size: 1.6em;
     color: var(--white);
 
-
-    span{
-      &:first-child{
+    span {
+      &:first-child {
         font-family: var(--font-allura);
         text-transform: capitalize;
       }
 
-      &:last-child{
+      &:last-child {
         margin-top: 0.25em;
       }
     }

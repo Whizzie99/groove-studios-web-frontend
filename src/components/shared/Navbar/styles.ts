@@ -1,5 +1,5 @@
-'use client';
-import styled from 'styled-components';
+"use client";
+import styled from "styled-components";
 
 interface StyledHamburgerMenuProps {
   readonly $isOpen?: boolean;
@@ -63,4 +63,3 @@ export const StyledHamburgerMenu = styled.div<StyledHamburgerMenuProps>`
       props.$isOpen ? "translateY(-11px) rotate(-45deg)" : "none"};
   }
 `;
-
