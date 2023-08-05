@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
+import LinkBtn from "../shared/LinkBtn/LinkBtn";
 import {
   StyledWrapper,
   StyledHeroLeft,
@@ -20,12 +21,7 @@ const Hero: React.FC = () => {
             note, every cherished glance, and every joyous step of your love
             story.
           </p>
-          <Link href="#">
-            <span>explore</span>
-            <span>
-              <BsArrowRight />
-            </span>
-          </Link>
+          <LinkBtn text="explore" />
         </StyledHeroLeftContent>
       </StyledHeroLeft>
       <StyledHeroRight>

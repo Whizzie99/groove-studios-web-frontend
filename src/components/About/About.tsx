@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "../shared/Container/Container";
+import LinkBtn from "../shared/LinkBtn/LinkBtn";
 import { BsArrowRight } from "react-icons/bs";
 import {
   StyledWrapper,
@@ -43,12 +44,7 @@ const About: React.FC = () => {
                 visual symphony, crafting timeless keepsakes that will make your
                 hearts skip a beat for generations to come.
               </p>
-              <Link href="#">
-                <span>contact us</span>
-                <span>
-                  <BsArrowRight />
-                </span>
-              </Link>
+              <LinkBtn text="contact us" />
             </StyledContent>
           </StyledFlexSectionRight>
         </StyledFlexSection>
