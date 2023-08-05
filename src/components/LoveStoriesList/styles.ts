@@ -1,7 +1,9 @@
 "use client";
 import styled from "styled-components";
 
-export const StyledWrapper = styled.div``;
+export const StyledWrapper = styled.div`
+  margin-bottom: 2em;
+`;
 
 export const StyledStoriesList = styled.div`
   display: grid;
