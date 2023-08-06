@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
 import Image from "next/image";
 import { StyledWrapper, StyledHamburgerMenu, StyledLogo } from "./styles";
 
 const Navbar: React.FC = () => {
+    const router = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleShowMenu = () => {
@@ -12,7 +14,7 @@ const Navbar: React.FC = () => {
 
   return (
     <StyledWrapper>
-      <StyledLogo>
+      <StyledLogo onClick={() => router.push('/')}>
         <Image
           src="/images/groove-logo.png"
           alt="groove logo"

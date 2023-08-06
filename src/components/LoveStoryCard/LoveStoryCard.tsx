@@ -28,7 +28,7 @@ const LoveStoryCard: React.FC = () => {
             amet. Ipsum tortor porttitor ornare odio enim curabitur. Eu turpis
             sed pretium ultricies libero arcu et blandit a.
           </p>
-          <Link href="#">read more</Link>
+          <Link href="/lovestory/1/a-tale-of-two-lovebirds">read more</Link>
         </StyledContentLeft>
         <StyledContentRight>
           <p>20th aug 2020</p>

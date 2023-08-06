@@ -12,7 +12,7 @@ const LoveStoriesList: React.FC = () => {
         <LoveStoryCard />
       </StyledStoriesList>
       <StyledCtaBtn>
-        <Link href="#">
+        <Link href="/lovestories">
           <span>read more</span>
           <span>
             <BsArrowRight />

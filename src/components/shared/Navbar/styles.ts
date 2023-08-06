@@ -26,6 +26,7 @@ export const StyledLogo = styled.div`
   position: relative;
   flex: 0.2;
   height: 100px;
+  cursor: pointer;
 `;
 
 export const StyledHamburgerMenu = styled.div<StyledHamburgerMenuProps>`
