@@ -9,11 +9,16 @@ const LoveStoriesFragments = () => {
       <LoveStoriesHero />
       <Container>
         <StyledPageContentDescription>
-        <p>
-          Here, the air is filled with the sweet fragrance of timeless love stories. Unveil the magical tales of soulmates finding each other, heartwarming journeys of affection, and the mesmerizing symphony of love&apos;s embrace. Let your heart be captivated by these enchanting chronicles that remind us that love is the most beautiful and wondrous adventure of all.
-        </p>
-      </StyledPageContentDescription>
-      <LoveStoriesList/>
+          <p>
+            Here, the air is filled with the sweet fragrance of timeless love
+            stories. Unveil the magical tales of soulmates finding each other,
+            heartwarming journeys of affection, and the mesmerizing symphony of
+            love&apos;s embrace. Let your heart be captivated by these
+            enchanting chronicles that remind us that love is the most beautiful
+            and wondrous adventure of all.
+          </p>
+        </StyledPageContentDescription>
+        <LoveStoriesList />
       </Container>
     </>
   );

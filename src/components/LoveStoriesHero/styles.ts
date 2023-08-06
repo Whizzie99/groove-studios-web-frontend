@@ -15,7 +15,7 @@ export const StyledHero = styled.div`
   background-position: center;
   background-size: cover;
 
-  h1{
+  h1 {
     font-family: var(--font-allura);
     text-transform: capitalize;
     width: 35%;
