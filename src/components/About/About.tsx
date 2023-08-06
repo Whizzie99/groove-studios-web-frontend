@@ -15,7 +15,7 @@ import {
 
 const About: React.FC = () => {
   return (
-    <StyledWrapper>
+    <StyledWrapper id="about">
       <Container>
         <StyledHeadingText>
           In love&apos;s tender glow, we make memories last, etched forever in
