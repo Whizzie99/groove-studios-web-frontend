@@ -5,7 +5,7 @@ export const StyledCard = styled.div`
   display: flex;
   align-items: center;
   padding: 1.5em;
-  gap: 1em;
+  gap: 1.5em;
   background: var(--gray-2);
 `;
 
@@ -13,6 +13,22 @@ export const StyledCardImg = styled.div`
   flex: 0.3;
   position: relative;
   height: 15em;
+  z-index: 3;
+
+  img{
+    z-index: 3;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0.5em;
+    right: -0.5em;
+    height: 100%;
+    width: 100%;
+    background: var(--pink);
+    z-index: 1;
+  }
 `;
 
 export const StyledCardContent = styled.div`
