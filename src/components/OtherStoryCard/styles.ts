@@ -6,6 +6,7 @@ export const StyledCard = styled.div`
   background: var(--gray-2);
   padding: 1em;
   z-index: 99 !important;
+  cursor: pointer;
 
   /* &::after{
     content: '';

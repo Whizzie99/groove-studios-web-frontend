@@ -1,15 +1,46 @@
+import axios from "@/utils/axios";
 import Link from "next/link";
+
 import { BsArrowRight } from "react-icons/bs";
 import LoveStoryCard from "../LoveStoryCard/LoveStoryCard";
 import { StyledWrapper, StyledStoriesList, StyledCtaBtn } from "./styles";
 
-const LoveStoriesList: React.FC = () => {
+// interface LoveStory {
+//   id: string,
+//   title: string,
+//   img: string,
+//   description: string;
+// }
+
+async function getLoveStories() {
+  const res = await axios.get("api/love-stories?populate=*");
+
+  return res.data;
+}
+
+export default async function LoveStoriesList() {
+  const loveStories = await getLoveStories();
+
+  // console.log(loveStories);
+
+  // const loveStories = await res.json();
+
+  // console.log(res);
+
   return (
     <StyledWrapper>
       <StyledStoriesList>
-        <LoveStoryCard />
-        <LoveStoryCard />
-        <LoveStoryCard />
+        {loveStories.data.map((loveStory: any) => (
+          <LoveStoryCard
+            key={loveStory.id}
+            id={loveStory.id}
+            img={loveStory.attributes.preview_image.data.attributes.url}
+            title={loveStory.attributes.title}
+            description={loveStory.attributes.short_description}
+            date={loveStory.attributes.createdAt}
+          />
+        ))}
+        {/* <LoveStoryCard /> */}
       </StyledStoriesList>
       <StyledCtaBtn>
         <Link href="/lovestories">
@@ -21,6 +52,4 @@ const LoveStoriesList: React.FC = () => {
       </StyledCtaBtn>
     </StyledWrapper>
   );
-};
-
-export default LoveStoriesList;
+}

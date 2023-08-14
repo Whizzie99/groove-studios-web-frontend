@@ -1,19 +1,28 @@
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { StyledCard, StyledImage, StyledTitle, StyledOverlay } from "./styles";
 
-const OtherStoryCard: React.FC = () => {
+interface Props {
+  id?: number;
+  img: string;
+  title: string;
+}
+
+const OtherStoryCard: React.FC<Props> = ({img, title, id}) => {
+  const router = useRouter();
+
   return (
-    <StyledCard>
+    <StyledCard onClick={() => router.push(`/lovestories/${id}/${title}`)}>
       <StyledImage>
         <Image
-          src="/images/sample-6.jpeg"
+          src={img}
           alt="sample"
           fill
           style={{ objectFit: "cover" }}
         />
       </StyledImage>
       <StyledTitle>
-        <h3>a tale of 2 birds</h3>
+        <h3>{title}</h3>
       </StyledTitle>
     </StyledCard>
   );

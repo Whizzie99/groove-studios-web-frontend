@@ -1,24 +1,23 @@
-"use client";
-import YouTube from "react-youtube";
 import { StyledVideo } from "./styles";
 
-interface VideoPlayerProps {
+// YouTube.tsx
+
+interface YouTubeProps {
   videoId?: string;
+  // className?: string;
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoId }) => {
-  const videoOptions = {
-    height: "100%",
-    width: "100%",
-  };
-
+const VideoPlayer: React.FC<YouTubeProps> = ({ videoId }) => {
   return (
     <StyledVideo>
-      <YouTube
-        videoId="-NqJHv7ewBo"
-        opts={videoOptions}
-        className="video-player"
-      />
+      <iframe
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        sandbox="allow-scripts allow-same-origin allow-presentation"
+        allowFullScreen
+      ></iframe>
     </StyledVideo>
   );
 };

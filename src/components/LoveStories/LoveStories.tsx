@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Container from "../shared/Container/Container";
 import LoveStoriesList from "../LoveStoriesList/LoveStoriesList";
 import { StyledWrapper, StyledHeading } from "./styles";
@@ -7,7 +8,9 @@ const LoveStories: React.FC = () => {
     <StyledWrapper>
       <Container>
         <StyledHeading>love stories</StyledHeading>
-        <LoveStoriesList />
+        <Suspense fallback={<p>loading...</p>}>
+          <LoveStoriesList />
+        </Suspense>
       </Container>
     </StyledWrapper>
   );

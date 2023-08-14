@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import Moment from "react-moment";
+
 import {
   StyledCard,
   StyledCardImg,
@@ -8,13 +11,27 @@ import {
   StyledContentRight,
 } from "./styles";
 
-const LoveStoryCard: React.FC = () => {
+interface LoveStoryCardProps {
+  id?: string;
+  img?: string;
+  title?: string;
+  description?: string;
+  date?: string;
+}
+
+const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
+  id,
+  img,
+  title,
+  description,
+  date,
+}) => {
   return (
     <StyledCard>
       <StyledCardImg>
         <Image
-          src="/images/sample-1.jpeg"
-          alt="love story image"
+          src={img || "/images/sample-1.jpeg"}
+          alt={title || "love story image"}
           fill
           style={{ objectFit: "cover" }}
           priority
@@ -22,16 +39,14 @@ const LoveStoryCard: React.FC = () => {
       </StyledCardImg>
       <StyledCardContent>
         <StyledContentLeft>
-          <h3>a tale of two love birds</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Leo egestas tristique diam
-            amet. Ipsum tortor porttitor ornare odio enim curabitur. Eu turpis
-            sed pretium ultricies libero arcu et blandit a.
-          </p>
-          <Link href="/lovestory/1/a-tale-of-two-lovebirds">read more</Link>
+          <h3>{title || "no title"}</h3>
+          <p>{description?.substring(0, 200)}...</p>
+          <Link href={`/lovestories/${id}/${title}`}>read more</Link>
         </StyledContentLeft>
         <StyledContentRight>
-          <p>20th aug 2020</p>
+          <p>
+            <Moment format="MMM Do YYYY">{date || "20th aug 2020"}</Moment>
+          </p>
         </StyledContentRight>
       </StyledCardContent>
     </StyledCard>

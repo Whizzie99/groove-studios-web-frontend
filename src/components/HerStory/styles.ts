@@ -13,7 +13,7 @@ export const StyledContent = styled.div`
     color: var(--pink);
   }
 
-  p {
+  div {
     font-size: 1.1em;
     font-family: var(--font-raleway);
     font-weight: 200;

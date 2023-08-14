@@ -1,16 +1,21 @@
 import Image from "next/image";
 import { StyledHero } from "./styles";
 
-const LoveStoryHero: React.FC = () => {
+interface Props {
+  title: string;
+  img: string;
+}
+
+const LoveStoryHero: React.FC<Props> = ({ title, img }) => {
   return (
     <StyledHero>
       <Image
-        src="/images/sample-6.jpeg"
+        src={img}
         alt="sample image"
         fill
         style={{ objectFit: "cover" }}
       />
-      <h1>a tale of 2 love birds</h1>
+      <h1>{title}</h1>
     </StyledHero>
   );
 };
