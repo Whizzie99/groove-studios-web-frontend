@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
     <StyledWrapper id="contact">
       <Container>
         <StyledFooterTop>
-          <h2>we&apos;re one shot away! 📸</h2>
+          <h2>we&apos;re one shot away!</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur. Leo egestas tristique diam
             amet. Ipsum tortor porttitor ornare odio enim curabitur. Eu turpis

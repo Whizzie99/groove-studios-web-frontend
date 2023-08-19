@@ -11,10 +11,9 @@ import "swiper/css/autoplay";
 import { StyledWrapper, StyledCarousel } from "./styles";
 
 const OtherStories: React.FC = () => {
-
   const [loveStories, setLoveStories] = useState([]);
   const [loading, setLoading] = useState<boolean>(true);
-  let mounted = useRef<boolean>(false);  
+  let mounted = useRef<boolean>(false);
 
   useEffect(() => {
     mounted.current = true;
@@ -22,21 +21,20 @@ const OtherStories: React.FC = () => {
     const fetchData = async () => {
       const response = await getLoveStories();
 
-      if(mounted.current && response.data){
-        setLoveStories(response.data)
+      if (mounted.current && response.data) {
+        setLoveStories(response.data);
         setLoading(false);
       }
-    }
+    };
 
     fetchData();
 
     return () => {
-      mounted.current = false
+      mounted.current = false;
     };
+  }, []);
 
-  }, [])
-
-  if (loading) return <p>loading...</p>
+  if (loading) return <p>loading...</p>;
 
   return (
     <StyledWrapper>
@@ -71,13 +69,15 @@ const OtherStories: React.FC = () => {
             disableOnInteraction: false,
           }}
         >
-          {
-            loveStories.map((loveStory: any) => (
-              <SwiperSlide key={loveStory.id}>
-                <OtherStoryCard id={loveStory.id} img={loveStory.attributes.preview_image.data.attributes.url} title={loveStory.attributes.title} />
-              </SwiperSlide>
-            ))
-          }
+          {loveStories.map((loveStory: any) => (
+            <SwiperSlide key={loveStory.id}>
+              <OtherStoryCard
+                id={loveStory.id}
+                img={loveStory.attributes.preview_image.data.attributes.url}
+                title={loveStory.attributes.title}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </StyledCarousel>
     </StyledWrapper>

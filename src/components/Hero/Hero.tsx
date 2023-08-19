@@ -1,6 +1,6 @@
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
-import { BsArrowRight } from "react-icons/bs";
+// import { BsArrowRight } from "react-icons/bs";
 import LinkBtn from "../shared/LinkBtn/LinkBtn";
 import {
   StyledWrapper,
@@ -30,6 +30,7 @@ const Hero: React.FC = () => {
             src="/images/sample-1.jpeg"
             alt="hero image"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
             style={{ objectFit: "cover" }}
             priority
           />

@@ -22,7 +22,10 @@ export default async function LoveStoryFragments({ id }: { id: number }) {
 
   return (
     <>
-      <LoveStoryHero title={loveStory.data.attributes.title} img={loveStory.data.attributes.main_image.data.attributes.url} />
+      <LoveStoryHero
+        title={loveStory.data.attributes.title}
+        img={loveStory.data.attributes.main_image.data.attributes.url}
+      />
       <HisStory content={loveStory.data.attributes.his_story} />
       <HerStory content={loveStory.data.attributes.her_story} />
       <VideoPlayer videoId={loveStory.data.attributes.youtube_video_id} />

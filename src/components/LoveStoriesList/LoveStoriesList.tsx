@@ -1,4 +1,4 @@
-import axios from "@/utils/axios";
+// import axios from "@/utils/axios";
 import Link from "next/link";
 
 import { BsArrowRight } from "react-icons/bs";
@@ -13,9 +13,9 @@ import { StyledWrapper, StyledStoriesList, StyledCtaBtn } from "./styles";
 // }
 
 async function getLoveStories() {
-  const res = await axios.get("api/love-stories?populate=*");
+  const res = await fetch("http://127.0.0.1:1337/api/love-stories?populate=*");
 
-  return res.data;
+  return res.json();
 }
 
 export default async function LoveStoriesList() {

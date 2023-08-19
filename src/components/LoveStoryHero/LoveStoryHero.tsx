@@ -9,12 +9,7 @@ interface Props {
 const LoveStoryHero: React.FC<Props> = ({ title, img }) => {
   return (
     <StyledHero>
-      <Image
-        src={img}
-        alt="sample image"
-        fill
-        style={{ objectFit: "cover" }}
-      />
+      <Image src={img} alt="sample image" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw" />
       <h1>{title}</h1>
     </StyledHero>
   );

@@ -7,19 +7,25 @@ interface StyledHamburgerMenuProps {
 
 export const StyledWrapper = styled.div`
   position: fixed;
-  top: 1em;
-  left: 50%;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  transform: translateX(-50%);
+  width: 100%;
+  /* transform: translateX(-50%); */
+  background-image: url("/images/new-nav-bg.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
   /* backdrop-filter: brightness(90%) blur(20px);
   -webkit-backdrop-filter: brightness(90%) blur(20px);
   -moz-backdrop-filter: brightness(90%) blur(20px); */
   z-index: 99;
-  /* padding: 1em 2em; */
-  border-radius: 1em;
+  padding: 3em;
+  padding-top: 1em;
+
+  /* border-radius: 1em; */
 `;
 
 export const StyledLogo = styled.div`
@@ -40,8 +46,8 @@ export const StyledHamburgerMenu = styled.div<StyledHamburgerMenuProps>`
   & span {
     display: block;
     width: 100%;
-    height: 0.15em;
-    background-color: var(--pink);
+    height: 0.2em;
+    background-color: var(--gray-3);
     position: absolute;
     border-radius: 0.5em;
     transition: transform 0.3s ease;
@@ -94,3 +100,5 @@ export const StyledMenuItems = styled.ul`
     }
   }
 `;
+
+export const StyledBgImg = styled.div``;

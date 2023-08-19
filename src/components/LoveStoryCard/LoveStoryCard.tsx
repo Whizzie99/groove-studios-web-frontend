@@ -33,6 +33,7 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
           src={img || "/images/sample-1.jpeg"}
           alt={title || "love story image"}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           style={{ objectFit: "cover" }}
           priority
         />

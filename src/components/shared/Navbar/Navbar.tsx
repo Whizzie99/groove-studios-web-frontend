@@ -11,6 +11,8 @@ import {
   StyledMenuItems,
 } from "./styles";
 
+// import logo from '/public/images/new-logo.png';
+
 const Navbar: React.FC = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -28,9 +30,10 @@ const Navbar: React.FC = () => {
       <StyledWrapper>
         <StyledLogo onClick={() => router.push("/")}>
           <Image
-            src="/images/groove-logo.png"
+            src="/images/new-logo.png"
             alt="groove logo"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
             style={{ objectFit: "contain" }}
             priority
           />
@@ -40,6 +43,10 @@ const Navbar: React.FC = () => {
           <span></span>
           <span></span>
         </StyledHamburgerMenu>
+        {/* <Image src="/images/new-nav-bg.png" fill style={{objectFit: 'contain'}} alt='bg' /> */}
+        {/* <StyledBgImg>
+          
+        </StyledBgImg> */}
       </StyledWrapper>
       {isOpen && (
         <StyledMenu>

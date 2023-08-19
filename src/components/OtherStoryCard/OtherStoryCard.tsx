@@ -8,22 +8,18 @@ interface Props {
   title: string;
 }
 
-const OtherStoryCard: React.FC<Props> = ({img, title, id}) => {
+const OtherStoryCard: React.FC<Props> = ({ img, title, id }) => {
   const router = useRouter();
 
   return (
     <StyledCard onClick={() => router.push(`/lovestories/${id}/${title}`)}>
       <StyledImage>
-        <Image
-          src={img}
-          alt="sample"
-          fill
-          style={{ objectFit: "cover" }}
-        />
+        <Image src={img} alt="sample" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw" />
       </StyledImage>
       <StyledTitle>
         <h3>{title}</h3>
       </StyledTitle>
+      {/* <StyledOverlay/> */}
     </StyledCard>
   );
 };

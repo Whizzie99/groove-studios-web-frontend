@@ -14,4 +14,10 @@ export const StyledWrapper = styled.div`
   }
 `;
 
-export const StyledCarousel = styled.div``;
+export const StyledCarousel = styled.div`
+  .swiper {
+    .swiper-wrapper .swiper-slide {
+      z-index: 3 !important;
+    }
+  }
+`;

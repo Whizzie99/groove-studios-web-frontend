@@ -1,9 +1,23 @@
+"use client";
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import LoveStoriesHero from "@/components/LoveStoriesHero/LoveStoriesHero";
 import Container from "@/components/shared/Container/Container";
 import LoveStoriesList from "@/components/LoveStoriesList/LoveStoriesList";
 import { StyledPageContentDescription } from "./styles";
 
 const LoveStoriesFragments = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
     <>
       <LoveStoriesHero />

@@ -15,12 +15,12 @@ export const StyledCardImg = styled.div`
   height: 15em;
   z-index: 3;
 
-  img{
+  img {
     z-index: 3;
   }
 
-  &:after{
-    content: '';
+  &:after {
+    content: "";
     position: absolute;
     top: 0.5em;
     right: -0.5em;

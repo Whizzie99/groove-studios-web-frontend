@@ -2,27 +2,21 @@
 import styled from "styled-components";
 
 export const StyledCard = styled.div`
-  /* position: relative !important; */
+  position: relative;
   background: var(--gray-2);
   padding: 1em;
-  z-index: 99 !important;
+  z-index: 5 !important;
   cursor: pointer;
-
-  /* &::after{
-    content: '';
-    position: absolute;
-    top: 1em;
-    right: -1em;
-    height: 100%;
-    width: 100%;
-    background: var(--pink);
-    z-index: 1;
-  } */
 `;
 
 export const StyledImage = styled.div`
   position: relative;
   height: 15em;
+  z-index: 3;
+
+  img {
+    z-index: 3;
+  }
 `;
 
 export const StyledTitle = styled.div`
@@ -41,8 +35,8 @@ export const StyledTitle = styled.div`
 
 export const StyledOverlay = styled.div`
   position: absolute;
-  top: 10px;
-  right: -10px;
+  top: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   background: var(--pink);
