@@ -13,26 +13,30 @@ export const StyledWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* transform: translateX(-50%); */
   background-image: url("/images/new-nav-bg.png");
   background-size: contain;
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
-  /* backdrop-filter: brightness(90%) blur(20px);
-  -webkit-backdrop-filter: brightness(90%) blur(20px);
-  -moz-backdrop-filter: brightness(90%) blur(20px); */
+  background-repeat: no-repeat;
   z-index: 99;
-  padding: 3em;
+  padding: 3em 1em;
   padding-top: 1em;
 
-  /* border-radius: 1em; */
+  @media screen and (min-width: 1200px) {
+    background-repeat: repeat;
+    padding: 3em;
+    padding-top: 1em;
+  }
+
 `;
 
 export const StyledLogo = styled.div`
   position: relative;
-  flex: 0.2;
+  flex: 0.5;
   height: 100px;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    flex: 0.2;
+  }
 `;
 
 export const StyledHamburgerMenu = styled.div<StyledHamburgerMenuProps>`

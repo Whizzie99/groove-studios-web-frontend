@@ -3,18 +3,38 @@ import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  height: 90vh;
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    height: 100vh;
+  }
 `;
 
 export const StyledHeroLeft = styled.div`
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+    height: auto;
+  }
 `;
 
 export const StyledHeroRight = styled.div`
-  width: 50%;
+  display: none;
+  width: 100%;
+  height: 50em;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
 `;
 
 export const StyledHeroLeftContent = styled.div`
@@ -23,7 +43,8 @@ export const StyledHeroLeftContent = styled.div`
 
   h1 {
     font-family: var(--font-solar);
-    font-size: 4em;
+    font-size: 2.5em;
+    line-height: 1.2;
     text-transform: capitalize;
     color: var(--pink);
   }
@@ -33,7 +54,7 @@ export const StyledHeroLeftContent = styled.div`
     font-weight: 200;
     line-height: 1.5;
     margin-top: 0.7em;
-    font-size: 1.1em;
+    font-size: 1em;
 
     &::first-letter {
       text-transform: uppercase;
@@ -46,7 +67,7 @@ export const StyledHeroLeftContent = styled.div`
     align-items: center;
     gap: 0.3em;
     background: var(--pink);
-    width: 30%;
+    width: 50%;
     margin-top: 1em;
     padding: 0.3em;
     text-decoration: none;
@@ -63,6 +84,20 @@ export const StyledHeroLeftContent = styled.div`
       &:last-child {
         margin-top: 0.25em;
       }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    h1{
+      font-size: 4em;
+    }
+
+    p{
+      font-size: 1.1em;
+    }
+
+    a{
+      width: 30%;
     }
   }
 `;

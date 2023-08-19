@@ -43,10 +43,6 @@ const Navbar: React.FC = () => {
           <span></span>
           <span></span>
         </StyledHamburgerMenu>
-        {/* <Image src="/images/new-nav-bg.png" fill style={{objectFit: 'contain'}} alt='bg' /> */}
-        {/* <StyledBgImg>
-          
-        </StyledBgImg> */}
       </StyledWrapper>
       {isOpen && (
         <StyledMenu>
