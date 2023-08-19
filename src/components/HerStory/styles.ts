@@ -8,9 +8,11 @@ export const StyledWrapper = styled.div`
 export const StyledContent = styled.div`
   h2 {
     font-size: 3em;
-    font-family: var(--font-allura);
+    font-family: var(--font-vesta);
+    font-weight: 900;
     text-transform: capitalize;
     color: var(--pink);
+    word-spacing: 2px;
   }
 
   div {

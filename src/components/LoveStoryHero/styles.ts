@@ -13,8 +13,9 @@ export const StyledHero = styled.div`
     z-index: 2;
     color: var(--pink);
     text-transform: capitalize;
-    font-family: var(--font-allura);
-    font-size: 4em;
+    font-family: var(--font-solar);
+    font-size: 2.3em;
+    margin-top: 2em;
     width: 40%;
     text-align: center;
   }

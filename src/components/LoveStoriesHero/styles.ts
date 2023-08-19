@@ -16,12 +16,13 @@ export const StyledHero = styled.div`
   background-size: cover;
 
   h1 {
-    font-family: var(--font-allura);
+    font-family: var(--font-solar);
     text-transform: capitalize;
     width: 35%;
-    font-size: 4em;
+    font-size: 2.5em;
     color: var(--pink);
     text-align: center;
-    line-height: 1;
+    line-height: 1.2;
+    margin-top: 3em;
   }
 `;
