@@ -9,8 +9,12 @@ export const StyledStoriesList = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 90%;
+  }
 `;
 
 export const StyledCtaBtn = styled.div`
@@ -24,7 +28,7 @@ export const StyledCtaBtn = styled.div`
     align-items: center;
     gap: 0.3em;
     background: var(--pink);
-    width: 18%;
+    width: 50%;
     margin-top: 1em;
     padding: 0.3em;
     text-decoration: none;
@@ -45,5 +49,9 @@ export const StyledCtaBtn = styled.div`
         margin-top: 0.25em;
       }
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 18%;
   }
 `;

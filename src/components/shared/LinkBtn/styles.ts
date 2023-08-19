@@ -14,7 +14,7 @@ export const StyledLink = styled.div<StyledLinkProps>`
     align-items: center;
     gap: 0.3em;
     background: ${(props) => (props.$bgColor ? props.$bgColor : "var(--pink)")};
-    width: ${(props) => (props.$width ? props.$width : "30%")};
+    width: 50%;
     margin-top: 1em;
     padding: 0.5em;
     text-decoration: none;
@@ -33,6 +33,12 @@ export const StyledLink = styled.div<StyledLinkProps>`
       &:last-child {
         margin-top: 0.25em;
       }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    a{
+      width: ${(props) => (props.$width ? props.$width : "30%")};
     }
   }
 `;

@@ -6,8 +6,8 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledHeadingText = styled.h2`
-  width: 60%;
-  font-size: 4em;
+  width: 90%;
+  font-size: 2.5em;
   font-weight: 900;
   font-family: var(--font-vesta);
   color: var(--pink);
@@ -15,32 +15,60 @@ export const StyledHeadingText = styled.h2`
   margin: 0 auto;
   margin-bottom: 3em;
   line-height: 1.2;
+
+  @media screen and (min-width: 1200px) {
+    width: 60%;
+    font-size: 4em;
+  }
 `;
 
 export const StyledFlexSection = styled.div`
   display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 `;
 
 export const StyledFlexSectionLeft = styled.div`
-  width: 50%;
+  width: 100%;
+  margin-bottom: 3em;
+  /* order: 2; */
+
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+    margin-bottom: 0;
+    /* order: 1; */
+  }
 `;
 
 export const StyledFlexSectionRight = styled.div`
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
+  /* order: 1; */
+
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+    /* order: 2; */
+  }
 `;
 
 export const StyledImage = styled.div`
-  width: 90%;
+  width: 100%;
   position: relative;
   height: 40em;
+
+  @media screen and (min-width: 1200px) {
+    width: 90%;
+  }
 `;
 
 export const StyledContent = styled.div`
   h2 {
     font-family: var(--font-solar);
-    font-size: 3em;
+    font-size: 2.3em;
     color: var(--pink);
     text-transform: capitalize;
     margin-bottom: 0.2em;
@@ -48,7 +76,7 @@ export const StyledContent = styled.div`
 
   p {
     font-family: var(--font-raleway);
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 200;
     line-height: 2;
 
@@ -63,7 +91,7 @@ export const StyledContent = styled.div`
     align-items: center;
     gap: 0.3em;
     background: var(--pink);
-    width: 30%;
+    width: 50%;
     margin-top: 0.5em;
     padding: 0.3em;
     text-decoration: none;
@@ -80,6 +108,20 @@ export const StyledContent = styled.div`
       &:last-child {
         margin-top: 0.25em;
       }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    h2{
+      font-size: 3em;
+    }
+
+    p{
+      font-size: 1.1em;
+    }
+
+    a{
+      width: 30%;
     }
   }
 `;
