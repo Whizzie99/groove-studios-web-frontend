@@ -17,7 +17,7 @@ export const StyledFooterTop = styled.div`
     text-transform: capitalize;
     width: 32%;
     text-align: center;
-    font-size: 3.2em;
+    font-size: 2.8em;
     line-height: 0.9;
   }
 
