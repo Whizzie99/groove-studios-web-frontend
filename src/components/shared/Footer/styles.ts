@@ -13,7 +13,7 @@ export const StyledFooterTop = styled.div`
   align-items: center;
 
   h2 {
-    font-family: var(--font-allura);
+    font-family: var(--font-solar);
     text-transform: capitalize;
     width: 32%;
     text-align: center;
@@ -38,9 +38,9 @@ export const StyledFooterTop = styled.div`
     background: var(--gray-1);
     width: 18%;
     margin-top: 1em;
-    padding: 0.5em;
+    padding: 0.3em;
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: var(--black);
     box-shadow:
       rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
@@ -48,7 +48,8 @@ export const StyledFooterTop = styled.div`
 
     span {
       &:first-child {
-        font-family: var(--font-allura);
+        font-family: var(--font-vesta);
+        font-weight: 900;
         text-transform: capitalize;
       }
 

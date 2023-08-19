@@ -22,8 +22,8 @@ export const StyledHeroLeftContent = styled.div`
   margin-left: 10%;
 
   h1 {
-    font-family: var(--font-allura);
-    font-size: 5em;
+    font-family: var(--font-solar);
+    font-size: 4em;
     text-transform: capitalize;
     color: var(--pink);
   }
@@ -48,14 +48,15 @@ export const StyledHeroLeftContent = styled.div`
     background: var(--pink);
     width: 30%;
     margin-top: 1em;
-    padding: 0.5em;
+    padding: 0.3em;
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: var(--white);
 
     span {
       &:first-child {
-        font-family: var(--font-allura);
+        font-family: var(--font-vesta);
+        font-weight: 900;
         text-transform: capitalize;
       }
 

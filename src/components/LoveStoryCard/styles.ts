@@ -42,8 +42,9 @@ export const StyledContentLeft = styled.div`
   flex: 0.8;
 
   h3 {
-    font-family: var(--font-allura);
-    font-size: 1.9em;
+    font-family: var(--font-vesta);
+    font-size: 2.3em;
+    font-weight: 900;
     color: var(--pink);
     text-transform: capitalize;
   }
@@ -57,8 +58,9 @@ export const StyledContentLeft = styled.div`
   }
 
   a {
-    font-family: var(--font-allura);
-    font-size: 1.2em;
+    font-family: var(--font-vesta);
+    font-size: 1.5em;
+    font-weight: 900;
     color: var(--pink);
     text-transform: capitalize;
   }
@@ -73,8 +75,9 @@ export const StyledContentRight = styled.div`
   p {
     width: 50%;
     text-align: center;
-    font-family: var(--font-allura);
-    font-size: 1.5em;
+    font-family: var(--font-vesta);
+    font-size: 1.8em;
+    font-weight: 900;
     color: var(--pink);
     text-transform: capitalize;
   }

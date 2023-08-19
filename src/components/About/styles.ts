@@ -6,13 +6,15 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledHeadingText = styled.h2`
-  width: 45%;
-  font-size: 3.2em;
-  font-family: var(--font-allura);
+  width: 60%;
+  font-size: 4em;
+  font-weight: 900;
+  font-family: var(--font-vesta);
   color: var(--pink);
   text-align: center;
   margin: 0 auto;
   margin-bottom: 3em;
+  line-height: 1.2;
 `;
 
 export const StyledFlexSection = styled.div`
@@ -37,7 +39,7 @@ export const StyledImage = styled.div`
 
 export const StyledContent = styled.div`
   h2 {
-    font-family: var(--font-allura);
+    font-family: var(--font-solar);
     font-size: 3em;
     color: var(--pink);
     text-transform: capitalize;
@@ -63,14 +65,15 @@ export const StyledContent = styled.div`
     background: var(--pink);
     width: 30%;
     margin-top: 0.5em;
-    padding: 0.5em;
+    padding: 0.3em;
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.8em;
+    font-weight: 900;
     color: var(--white);
 
     span {
       &:first-child {
-        font-family: var(--font-allura);
+        font-family: var(--font-vesta);
         text-transform: capitalize;
       }
 

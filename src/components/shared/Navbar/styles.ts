@@ -92,8 +92,9 @@ export const StyledMenuItems = styled.ul`
 
     a {
       text-transform: capitalize;
-      font-family: var(--font-allura);
+      font-family: var(--font-vesta);
       font-size: 3em;
+      font-weight: 900;
       text-decoration: none;
       color: var(--pink);
       font-weight: 900;

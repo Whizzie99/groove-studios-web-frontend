@@ -26,9 +26,10 @@ export const StyledCtaBtn = styled.div`
     background: var(--pink);
     width: 18%;
     margin-top: 1em;
-    padding: 0.5em;
+    padding: 0.3em;
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.8em;
+    font-weight: 900;
     color: var(--white);
     box-shadow:
       rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
@@ -36,7 +37,7 @@ export const StyledCtaBtn = styled.div`
 
     span {
       &:first-child {
-        font-family: var(--font-allura);
+        font-family: var(--font-vesta);
         text-transform: capitalize;
       }
 

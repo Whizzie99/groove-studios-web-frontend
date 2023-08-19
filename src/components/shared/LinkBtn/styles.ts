@@ -18,7 +18,7 @@ export const StyledLink = styled.div<StyledLinkProps>`
     margin-top: 1em;
     padding: 0.5em;
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: ${(props) => (props.$textColor ? props.$textColor : "var(--white)")};
     box-shadow:
       rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
@@ -26,7 +26,7 @@ export const StyledLink = styled.div<StyledLinkProps>`
 
     span {
       &:first-child {
-        font-family: var(--font-allura);
+        font-family: var(--font-vesta);
         text-transform: capitalize;
       }
 
