@@ -26,6 +26,7 @@ export const GlobalStyles = createGlobalStyle`
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    scroll-behavior: smooth;
     /* scroll-behavior: smooth; */
     /* background-color: var(--gray-1); */
   }

@@ -14,7 +14,7 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
-import heroImg from '../../../public/images/sample-1.jpeg';
+import heroImg from "../../../public/images/sample-1.jpeg";
 
 const Hero: React.FC = () => {
   const elementsRef = useRef<HTMLElement[]>([]);
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
             note, every cherished glance, and every joyous step of your love
             story.
           </p>
-          <LinkBtn text="explore" />
+          <LinkBtn text="explore" path="/#about" />
         </StyledHeroLeftContent>
       </StyledHeroLeft>
       <StyledHeroRight>

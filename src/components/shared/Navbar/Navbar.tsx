@@ -11,7 +11,7 @@ import {
   StyledMenuItems,
 } from "./styles";
 
-// import logo from '/public/images/new-logo.png';
+import logo from "../../../../public/images/new-logo.png";
 
 const Navbar: React.FC = () => {
   const router = useRouter();
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
       <StyledWrapper>
         <StyledLogo onClick={() => router.push("/")}>
           <Image
-            src="/images/new-logo.png"
+            src={logo}
             alt="groove logo"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
