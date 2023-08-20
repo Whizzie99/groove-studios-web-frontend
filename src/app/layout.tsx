@@ -36,7 +36,7 @@ const SolarVestaSerif = localFont({
 
 export const metadata: Metadata = {
   title: "Groove Studios",
-  description: "Groove Studios",
+  description: "Capturing love's rythm",
 };
 
 export default function RootLayout({
