@@ -29,7 +29,7 @@ export const StyledWrapper = styled.div`
 
 export const StyledLogo = styled.div`
   position: relative;
-  flex: 0.5;
+  flex: 0.4;
   height: 100px;
   cursor: pointer;
   margin-top: -1.1em;

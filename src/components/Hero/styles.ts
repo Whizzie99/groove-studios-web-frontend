@@ -38,12 +38,13 @@ export const StyledHeroRight = styled.div`
 `;
 
 export const StyledHeroLeftContent = styled.div`
-  width: 70%;
+  width: 80%;
+  margin-top: 10em;
   margin-left: 10%;
 
   h1 {
     font-family: var(--font-solar);
-    font-size: 2.5em;
+    font-size: 2.7em;
     line-height: 1.2;
     text-transform: capitalize;
     color: var(--pink);
@@ -88,6 +89,7 @@ export const StyledHeroLeftContent = styled.div`
   }
 
   @media screen and (min-width: 992px) {
+    width: 70%;
     h1 {
       font-size: 4em;
     }
