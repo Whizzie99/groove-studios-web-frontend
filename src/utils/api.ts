@@ -3,7 +3,7 @@ import axios from "axios";
 export const getLoveStories = async () => {
   try {
     const { data } = await axios.get(
-      "http://localhost:1337/api/love-stories?populate=*",
+      "https://groove-studios-cms.onrender.com/api/love-stories?populate=*",
     );
     console.log(data);
     return data;

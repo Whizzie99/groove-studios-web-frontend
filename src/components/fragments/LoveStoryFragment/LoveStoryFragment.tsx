@@ -10,7 +10,7 @@ import VideoPlayer from "@/components/VideoPlayer/VideoPlayer";
 // }
 
 async function getLoveStory(id: number) {
-  const res = await axios.get(`api/love-stories/${id}?populate=*`);
+  const res = await axios.get(`love-stories/${id}?populate=*`);
 
   return res.data;
 }

@@ -13,7 +13,9 @@ import { StyledWrapper, StyledStoriesList, StyledCtaBtn } from "./styles";
 // }
 
 async function getLoveStories() {
-  const res = await fetch("http://127.0.0.1:1337/api/love-stories?populate=*");
+  const res = await fetch(
+    "https://groove-studios-cms.onrender.com/api/love-stories?populate=*",
+  );
 
   return res.json();
 }
