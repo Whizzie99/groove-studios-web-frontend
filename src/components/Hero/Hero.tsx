@@ -14,6 +14,8 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
+import heroImg from '../../../public/images/sample-1.jpeg';
+
 const Hero: React.FC = () => {
   const elementsRef = useRef<HTMLElement[]>([]);
 
@@ -73,11 +75,12 @@ const Hero: React.FC = () => {
       <StyledHeroRight>
         <StyledHeroRightImg>
           <Image
-            src="/images/sample-1.jpeg"
+            src={heroImg}
             alt="hero image"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
             style={{ objectFit: "cover" }}
+            placeholder="blur"
             priority
           />
         </StyledHeroRightImg>

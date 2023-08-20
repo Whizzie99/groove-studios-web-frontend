@@ -4,6 +4,9 @@ import LoveStoriesFragments from "@/components/fragments/LoveStoriesFragment/Lov
 export const metadata: Metadata = {
   title: "Groove Studios | Love Stories",
   description: "Hearts entwined: love's enchanting chronicles",
+  openGraph: {
+    images: ['./groove-og-image.jpg']
+  }
 };
 
 export default function LoveStories() {
