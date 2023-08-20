@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
 
   @media screen and (min-width: 992px) {

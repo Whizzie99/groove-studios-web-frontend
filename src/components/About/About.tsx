@@ -19,6 +19,8 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
+import aboutImg from "../../../public/images/sample-4.jpg";
+
 const About: React.FC = () => {
   const elementsRef = useRef<HTMLElement[]>([]);
 
@@ -73,11 +75,12 @@ const About: React.FC = () => {
           <StyledFlexSectionLeft>
             <StyledImage ref={addElementRef}>
               <Image
-                src="/images/sample-4.jpg"
+                src={aboutImg}
                 alt="about image"
                 fill
                 style={{ objectFit: "cover" }}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+                placeholder="blur"
                 priority
               />
             </StyledImage>
@@ -93,7 +96,7 @@ const About: React.FC = () => {
                 visual symphony, crafting timeless keepsakes that will make your
                 hearts skip a beat for generations to come.
               </p>
-              <LinkBtn text="contact us" />
+              <LinkBtn text="contact us" path="https://wa.link/h6zcpb" />
             </StyledContent>
           </StyledFlexSectionRight>
         </StyledFlexSection>

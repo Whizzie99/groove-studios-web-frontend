@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
             amet. Ipsum tortor porttitor ornare odio enim curabitur. Eu turpis
             sed pretium ultricies libero arcu et blandit a.
           </p>
-          <Link href="#">
+          <Link href="https://wa.link/h6zcpb" target="_blank" rel="noreferrer">
             <span>contact us</span>
             <span>
               <BsArrowRight />
