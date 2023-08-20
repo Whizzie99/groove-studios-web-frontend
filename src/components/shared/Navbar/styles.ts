@@ -36,6 +36,7 @@ export const StyledLogo = styled.div`
 
   @media screen and (min-width: 992px) {
     flex: 0.2;
+    margin-top: 0;
   }
 `;
 
@@ -73,6 +74,10 @@ export const StyledHamburgerMenu = styled.div<StyledHamburgerMenuProps>`
     top: 22px;
     transform: ${(props) =>
       props.$isOpen ? "translateY(-11px) rotate(-45deg)" : "none"};
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-top: 0;
   }
 `;
 
