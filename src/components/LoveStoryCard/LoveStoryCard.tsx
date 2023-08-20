@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -32,6 +33,7 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
   date,
 }) => {
   const elementsRef = useRef<HTMLElement[]>([]);
+  const router = useRouter();
 
   const addElementRef = (element: HTMLElement | null) => {
     if (element) {
@@ -41,6 +43,7 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
 
   useEffect(() => {
     const elements = elementsRef.current;
+    
 
     elements.forEach((element) => {
       gsap.set(element, { opacity: 0, y: 50 });
@@ -74,7 +77,7 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
   }, []);
 
   return (
-    <StyledCard ref={addElementRef}>
+    <StyledCard ref={addElementRef} onClick={() => router.push(`/lovestories/${id}/${title}`)}>
       <StyledCardImg>
         <Image
           src={img || "/images/sample-1.jpeg"}

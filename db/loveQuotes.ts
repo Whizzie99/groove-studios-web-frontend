@@ -8,5 +8,5 @@ export const loveQuotes: string[] = [
   "I love you to the moon and back.",
   "You are my happily ever after.",
   "I love the way you love me.",
-  "You are my favorite person in the entire world."
+  "You are my favorite person in the entire world.",
 ];

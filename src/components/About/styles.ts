@@ -2,7 +2,11 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
-  padding: 5em 0;
+  padding: 2em 0;
+
+  @media screen and (min-width: 992px) {
+    padding: 5em 0;
+  }
 `;
 
 export const StyledHeadingText = styled.h2`

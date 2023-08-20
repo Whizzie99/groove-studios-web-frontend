@@ -7,6 +7,7 @@ export const StyledCard = styled.div`
   padding: 1.5em;
   gap: 1.5em;
   background: var(--gray-2);
+  cursor: pointer;
 
   @media screen and (min-width: 992px) {
     flex-direction: row;

@@ -10,7 +10,7 @@ export const StyledWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  > div{
+  > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,8 +19,8 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledHeart = styled.div`
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   position: relative;
   transform: rotate(-45deg);
   background: #d8a3a3;
@@ -29,21 +29,40 @@ export const StyledHeart = styled.div`
   &:before,
   &:after {
     content: "";
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #d8a3a3;
     position: absolute;
   }
 
   &:before {
-    top: -40px;
+    top: -25px;
     left: 0;
   }
 
   &:after {
-    left: 40px;
+    left: 25px;
     top: 0;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 80px;
+    height: 80px;
+
+    &:before,
+    &:after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &:before {
+      top: -40px;
+    }
+
+    &:after {
+      left: 40px;
+    }
   }
 
   @keyframes beat {
@@ -57,13 +76,16 @@ export const StyledHeart = styled.div`
 `;
 
 export const StyledLoveQuote = styled.p`
-    font-size: 3em;
-    font-weight: 900;
-    text-align: center;
-    font-family: var(--font-vesta);
-    color: #d8a3a3;
-`
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  font-family: var(--font-vesta);
+  color: #d8a3a3;
 
+  @media screen and (min-width: 992px) {
+    font-size: 3em;
+  }
+`;
 
 export default function loading() {
   return (
