@@ -20,7 +20,7 @@ export const StyledWrapper = styled.div`
   padding: 3em 1em;
   padding-top: 1em;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     background-repeat: repeat;
     padding: 3em;
     padding-top: 1em;
@@ -34,7 +34,7 @@ export const StyledLogo = styled.div`
   height: 100px;
   cursor: pointer;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     flex: 0.2;
   }
 `;

@@ -7,7 +7,7 @@ export const StyledWrapper = styled.div`
   height: 90vh;
   width: 100%;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     flex-direction: row;
     height: 100vh;
   }
@@ -19,7 +19,7 @@ export const StyledHeroLeft = styled.div`
   width: 100%;
   height: 100%;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     width: 50%;
     height: auto;
   }
@@ -30,7 +30,7 @@ export const StyledHeroRight = styled.div`
   width: 100%;
   height: 50em;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     display: block;
     width: 50%;
     height: auto;
@@ -87,7 +87,7 @@ export const StyledHeroLeftContent = styled.div`
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     h1{
       font-size: 4em;
     }

@@ -36,7 +36,7 @@ export const StyledLink = styled.div<StyledLinkProps>`
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     a{
       width: ${(props) => (props.$width ? props.$width : "30%")};
     }

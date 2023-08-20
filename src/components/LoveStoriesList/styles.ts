@@ -12,7 +12,7 @@ export const StyledStoriesList = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     width: 90%;
   }
 `;
@@ -51,7 +51,9 @@ export const StyledCtaBtn = styled.div`
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 18%;
+  @media screen and (min-width: 992px) {
+    a{
+      width: 18%;
+    }
   }
 `;

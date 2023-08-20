@@ -12,7 +12,7 @@ export const StyledHeading = styled.h2`
   color: var(--pink);
   text-transform: capitalize;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     font-size: 3em;
   }
 `;

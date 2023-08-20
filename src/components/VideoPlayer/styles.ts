@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyledVideo = styled.div`
   margin: 5em auto;
-  width: 60%;
+  width: 90%;
   height: 30em;
 
   > iframe {
@@ -14,5 +14,9 @@ export const StyledVideo = styled.div`
   > div {
     width: 100% !important;
     height: 100% !important;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 60%;
   }
 `;

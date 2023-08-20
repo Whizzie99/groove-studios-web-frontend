@@ -8,7 +8,7 @@ export const StyledCard = styled.div`
   gap: 1.5em;
   background: var(--gray-2);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     flex-direction: row;
     align-items: center;
   }
@@ -36,7 +36,7 @@ export const StyledCardImg = styled.div`
     z-index: 1;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     flex: 0.3;
   }
 `;
@@ -47,7 +47,7 @@ export const StyledCardContent = styled.div`
   align-items: center;
   gap: 1em;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     flex: 0.7;
   }
 `;
@@ -79,7 +79,7 @@ export const StyledContentLeft = styled.div`
     text-transform: capitalize;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     flex: 0.8;
 
     h3{
@@ -108,7 +108,7 @@ export const StyledContentRight = styled.div`
     text-transform: capitalize;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     flex: 0.2;
 
     p{

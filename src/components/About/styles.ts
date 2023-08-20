@@ -16,7 +16,7 @@ export const StyledHeadingText = styled.h2`
   margin-bottom: 3em;
   line-height: 1.2;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     width: 60%;
     font-size: 4em;
   }
@@ -26,7 +26,7 @@ export const StyledFlexSection = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     flex-direction: row;
   }
 `;
@@ -36,7 +36,7 @@ export const StyledFlexSectionLeft = styled.div`
   margin-bottom: 3em;
   /* order: 2; */
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     width: 50%;
     margin-bottom: 0;
     /* order: 1; */
@@ -49,7 +49,7 @@ export const StyledFlexSectionRight = styled.div`
   align-items: center;
   /* order: 1; */
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     width: 50%;
     /* order: 2; */
   }
@@ -60,7 +60,7 @@ export const StyledImage = styled.div`
   position: relative;
   height: 40em;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     width: 90%;
   }
 `;
@@ -111,7 +111,7 @@ export const StyledContent = styled.div`
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     h2{
       font-size: 3em;
     }

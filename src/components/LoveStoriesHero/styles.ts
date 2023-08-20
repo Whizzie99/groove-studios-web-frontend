@@ -18,11 +18,24 @@ export const StyledHero = styled.div`
   h1 {
     font-family: var(--font-solar);
     text-transform: capitalize;
-    width: 35%;
-    font-size: 2.5em;
+    width: 90%;
+    font-size: 2em;
     color: var(--pink);
     text-align: center;
     line-height: 1.2;
     margin-top: 3em;
+  }
+
+  @media screen and (max-width: 800px) {
+    h1{
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    h1{
+      width: 35%;
+      font-size: 2.5em;
+    }
   }
 `;
