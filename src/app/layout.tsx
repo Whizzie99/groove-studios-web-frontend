@@ -37,6 +37,9 @@ const SolarVestaSerif = localFont({
 export const metadata: Metadata = {
   title: "Groove Studios",
   description: "Capturing love's rythm",
+  openGraph: {
+    images: ['./groove-og-image.jpg']
+  }
 };
 
 export default function RootLayout({
