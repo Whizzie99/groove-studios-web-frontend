@@ -1,6 +1,7 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { StyledCard, StyledImage, StyledTitle, StyledOverlay } from "./styles";
+import { sanitizeUrl } from "@/utils/helpers";
+import { StyledCard, StyledImage, StyledTitle } from "./styles";
 
 interface Props {
   id?: number;
@@ -12,7 +13,11 @@ const OtherStoryCard: React.FC<Props> = ({ img, title, id }) => {
   const router = useRouter();
 
   return (
-    <StyledCard onClick={() => router.push(`/lovestories/${id}/${title}`)}>
+    <StyledCard onClick={() => {
+      if (title) {
+        router.push(`/lovestories/${id}/${sanitizeUrl(title)}`)
+      }
+    }}>
       <StyledImage>
         <Image
           src={img}
@@ -25,7 +30,6 @@ const OtherStoryCard: React.FC<Props> = ({ img, title, id }) => {
       <StyledTitle>
         <h3>{title}</h3>
       </StyledTitle>
-      {/* <StyledOverlay/> */}
     </StyledCard>
   );
 };

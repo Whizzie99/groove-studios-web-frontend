@@ -6,6 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import Moment from "react-moment";
+import { sanitizeUrl } from "@/utils/helpers";
 
 import {
   StyledCard,
@@ -40,6 +41,12 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
       elementsRef.current.push(element);
     }
   };
+
+  // const redirectUrl = (url: string) => {
+  //   if (url) {
+  //       router.push(`/lovestories/${id}/${sanitizeUrl(url)}`)
+  //     }
+  // }
 
   useEffect(() => {
     const elements = elementsRef.current;
@@ -77,7 +84,11 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
   }, []);
 
   return (
-    <StyledCard ref={addElementRef} onClick={() => router.push(`/lovestories/${id}/${title}`)}>
+    <StyledCard ref={addElementRef} onClick={() => {
+      if (title) {
+        router.push(`/lovestories/${id}/${sanitizeUrl(title)}`)
+      }
+    }}>
       <StyledCardImg>
         <Image
           src={img || "/images/sample-1.jpeg"}

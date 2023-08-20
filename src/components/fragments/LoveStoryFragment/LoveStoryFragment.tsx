@@ -18,7 +18,7 @@ async function getLoveStory(id: number) {
 export default async function LoveStoryFragments({ id }: { id: number }) {
   const loveStory = await getLoveStory(id);
 
-  console.log(loveStory);
+  // console.log(loveStory);
 
   return (
     <>
