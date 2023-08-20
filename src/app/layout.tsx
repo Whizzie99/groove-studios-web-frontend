@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   title: "Groove Studios",
   description: "Capturing love's rythm",
   openGraph: {
-    images: ['./groove-og-image.jpg']
+    images: ['https://res.cloudinary.com/dsvkqlylv/image/upload/v1692533092/groove-og-image_neqoqs.jpg']
   }
 };
 
