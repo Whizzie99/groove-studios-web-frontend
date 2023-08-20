@@ -15,7 +15,7 @@ export const StyledPageContentDescription = styled.div`
   }
 
   @media screen and (min-width: 1200px) {
-    p{
+    p {
       width: 50%;
       font-size: 1.2em;
     }

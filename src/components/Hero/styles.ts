@@ -88,15 +88,15 @@ export const StyledHeroLeftContent = styled.div`
   }
 
   @media screen and (min-width: 992px) {
-    h1{
+    h1 {
       font-size: 4em;
     }
 
-    p{
+    p {
       font-size: 1.1em;
     }
 
-    a{
+    a {
       width: 30%;
     }
   }

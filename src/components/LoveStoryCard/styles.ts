@@ -82,11 +82,11 @@ export const StyledContentLeft = styled.div`
   @media screen and (min-width: 992px) {
     flex: 0.8;
 
-    h3{
+    h3 {
       font-size: 2.3em;
     }
 
-    p{
+    p {
       font-size: 1em;
     }
   }
@@ -111,7 +111,7 @@ export const StyledContentRight = styled.div`
   @media screen and (min-width: 992px) {
     flex: 0.2;
 
-    p{
+    p {
       width: 50%;
       font-size: 1.8em;
     }

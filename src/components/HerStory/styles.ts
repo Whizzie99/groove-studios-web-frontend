@@ -23,11 +23,11 @@ export const StyledContent = styled.div`
   }
 
   @media screen and (min-width: 992px) {
-    h2{
+    h2 {
       font-size: 3em;
     }
 
-    div{
+    div {
       font-size: 1.1em;
     }
   }

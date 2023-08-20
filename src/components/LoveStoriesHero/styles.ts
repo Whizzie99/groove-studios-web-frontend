@@ -27,13 +27,13 @@ export const StyledHero = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    h1{
+    h1 {
       text-align: center;
     }
   }
 
   @media screen and (min-width: 992px) {
-    h1{
+    h1 {
       width: 35%;
       font-size: 2.5em;
     }

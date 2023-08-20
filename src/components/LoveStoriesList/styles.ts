@@ -52,7 +52,7 @@ export const StyledCtaBtn = styled.div`
   }
 
   @media screen and (min-width: 992px) {
-    a{
+    a {
       width: 18%;
     }
   }

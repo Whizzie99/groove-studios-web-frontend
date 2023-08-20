@@ -25,7 +25,6 @@ export const StyledWrapper = styled.div`
     padding: 3em;
     padding-top: 1em;
   }
-
 `;
 
 export const StyledLogo = styled.div`

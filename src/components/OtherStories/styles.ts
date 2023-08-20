@@ -22,7 +22,7 @@ export const StyledWrapper = styled.div`
   @media screen and (min-width: 992px) {
     margin-left: 10%;
 
-    h2{
+    h2 {
       font-size: 2.5em;
     }
   }

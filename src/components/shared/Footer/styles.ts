@@ -60,16 +60,16 @@ export const StyledFooterTop = styled.div`
   }
 
   @media screen and (min-width: 992px) {
-    h2{
+    h2 {
       width: 32%;
       font-size: 2.8em;
     }
 
-    p{
+    p {
       width: 40%;
     }
 
-    a{
+    a {
       width: 18%;
     }
   }
