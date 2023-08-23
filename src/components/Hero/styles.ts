@@ -43,7 +43,7 @@ export const StyledHeroLeftContent = styled.div`
   margin-left: 10%;
 
   h1 {
-    font-family: var(--font-solar);
+    font-family: var(--font-magic);
     font-size: 2.7em;
     line-height: 1.2;
     text-transform: capitalize;

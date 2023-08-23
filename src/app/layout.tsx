@@ -28,10 +28,10 @@ const VestaScript = localFont({
   variable: "--font-vesta",
 });
 
-const SolarVestaSerif = localFont({
-  src: "../../public/fonts/Solar-Vesta-Serif.ttf",
+const MagicRetro = localFont({
+  src: "../../public/fonts/Magic-Retro.ttf",
   display: "swap",
-  variable: "--font-solar",
+  variable: "--font-magic",
 });
 
 export const metadata: Metadata = {
@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${allura.variable} ${raleway.variable} ${VestaScript.variable} ${SolarVestaSerif.variable}`}
+        className={`${allura.variable} ${raleway.variable} ${VestaScript.variable} ${MagicRetro.variable}`}
       >
         <StyledComponentsRegistry>
           <GlobalStyles />

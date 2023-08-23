@@ -33,7 +33,7 @@ export const StyledLogo = styled.div`
   flex: 0.4;
   height: 100px;
   cursor: pointer;
-  margin-top: -1.1em;
+  /* margin-top: -1.1em; */
 
   @media screen and (min-width: 992px) {
     flex: 0.2;
@@ -48,7 +48,7 @@ export const StyledHamburgerMenu = styled.div<StyledHamburgerMenuProps>`
   height: 25px;
   position: relative;
   cursor: pointer;
-  margin-top: -1.3em;
+  /* margin-top: -1.3em; */
 
   & span {
     display: block;

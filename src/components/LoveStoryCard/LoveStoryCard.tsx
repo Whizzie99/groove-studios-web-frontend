@@ -50,7 +50,6 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
 
   useEffect(() => {
     const elements = elementsRef.current;
-    
 
     elements.forEach((element) => {
       gsap.set(element, { opacity: 0, y: 50 });
@@ -84,11 +83,14 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
   }, []);
 
   return (
-    <StyledCard ref={addElementRef} onClick={() => {
-      if (title) {
-        router.push(`/lovestories/${id}/${sanitizeUrl(title)}`)
-      }
-    }}>
+    <StyledCard
+      ref={addElementRef}
+      onClick={() => {
+        if (title) {
+          router.push(`/lovestories/${id}/${sanitizeUrl(title)}`);
+        }
+      }}
+    >
       <StyledCardImg>
         <Image
           src={img || "/images/sample-1.jpeg"}

@@ -8,7 +8,7 @@ export const StyledWrapper = styled.div`
 export const StyledHeading = styled.h2`
   margin-bottom: 1em;
   font-size: 2em;
-  font-family: var(--font-solar);
+  font-family: var(--font-magic);
   color: var(--pink);
   text-transform: capitalize;
 

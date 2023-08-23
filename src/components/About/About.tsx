@@ -69,7 +69,7 @@ const About: React.FC = () => {
       <Container>
         <StyledHeadingText ref={addElementRef}>
           In love&apos;s tender glow, we make memories last, etched forever in
-          our hearts. 💕
+          our hearts.
         </StyledHeadingText>
         <StyledFlexSection>
           <StyledFlexSectionLeft>
