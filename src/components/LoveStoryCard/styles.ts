@@ -105,7 +105,7 @@ export const StyledContentRight = styled.div`
     font-family: var(--font-magic);
     font-size: 1.5em;
     line-height: 1;
-    font-weight: 900;
+    /* font-weight: 00; */
     color: var(--pink);
     text-transform: capitalize;
   }
