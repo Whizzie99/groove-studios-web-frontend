@@ -13,9 +13,10 @@ export const StyledWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-image: url("/images/new-nav-bg.png");
+  /* background-image: url("/images/new-nav-bg.png"); */
+  background-image: url("/images/new-nav-bg-1.png");
   background-size: contain;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   z-index: 99;
   padding: 3em 1em;
   padding-top: 1em;
