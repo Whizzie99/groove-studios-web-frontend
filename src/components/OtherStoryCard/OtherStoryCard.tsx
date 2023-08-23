@@ -13,11 +13,13 @@ const OtherStoryCard: React.FC<Props> = ({ img, title, id }) => {
   const router = useRouter();
 
   return (
-    <StyledCard onClick={() => {
-      if (title) {
-        router.push(`/lovestories/${id}/${sanitizeUrl(title)}`)
-      }
-    }}>
+    <StyledCard
+      onClick={() => {
+        if (title) {
+          router.push(`/lovestories/${id}/${sanitizeUrl(title)}`);
+        }
+      }}
+    >
       <StyledImage>
         <Image
           src={img}

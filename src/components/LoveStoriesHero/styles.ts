@@ -16,7 +16,7 @@ export const StyledHero = styled.div`
   background-size: cover;
 
   h1 {
-    font-family: var(--font-solar);
+    font-family: var(--font-magic);
     text-transform: capitalize;
     width: 90%;
     font-size: 2em;

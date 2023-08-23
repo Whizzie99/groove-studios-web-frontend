@@ -13,7 +13,7 @@ export const StyledFooterTop = styled.div`
   align-items: center;
 
   h2 {
-    font-family: var(--font-solar);
+    font-family: var(--font-magic);
     text-transform: capitalize;
     /* width: 32%; */
     text-align: center;

@@ -7,7 +7,7 @@ export const StyledWrapper = styled.div`
 
   h2 {
     font-size: 1.8em;
-    font-family: var(--font-solar);
+    font-family: var(--font-magic);
     text-transform: capitalize;
     color: var(--pink);
     margin-bottom: 0.5em;

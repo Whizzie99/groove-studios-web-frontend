@@ -71,7 +71,7 @@ export const StyledImage = styled.div`
 
 export const StyledContent = styled.div`
   h2 {
-    font-family: var(--font-solar);
+    font-family: var(--font-magic);
     font-size: 2.3em;
     color: var(--pink);
     text-transform: capitalize;

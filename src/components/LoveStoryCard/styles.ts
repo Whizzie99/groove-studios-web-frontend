@@ -101,9 +101,10 @@ export const StyledContentRight = styled.div`
 
   p {
     /* width: 50%; */
-    text-align: center;
-    font-family: var(--font-vesta);
+    text-align: right;
+    font-family: var(--font-magic);
     font-size: 1.5em;
+    line-height: 1;
     font-weight: 900;
     color: var(--pink);
     text-transform: capitalize;
@@ -114,7 +115,7 @@ export const StyledContentRight = styled.div`
 
     p {
       width: 50%;
-      font-size: 1.8em;
+      font-size: 1.5em;
     }
   }
 `;

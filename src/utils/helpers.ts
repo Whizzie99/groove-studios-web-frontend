@@ -5,5 +5,5 @@ export const getRandomWord = (words: string[]): string => {
 
 export const sanitizeUrl = (url: string): string => {
   const lowerCaseStr = url.toLowerCase();
-  return lowerCaseStr.replace(/,|\./g, '') .replace(/\s/g, '-');
+  return lowerCaseStr.replace(/,|\./g, "").replace(/\s/g, "-");
 };
