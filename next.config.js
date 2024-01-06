@@ -5,14 +5,15 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "res.cloudinary.com",
-        port: "",
-        pathname: "/dsvkqlylv/**",
-      },
-    ],
+    domains: ["cdn.sanity.io"],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "res.cloudinary.com",
+    //     port: "",
+    //     pathname: "/dsvkqlylv/**",
+    //   },
+    // ],
   },
 };
 

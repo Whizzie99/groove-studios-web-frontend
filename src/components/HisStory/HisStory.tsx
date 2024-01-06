@@ -1,8 +1,12 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import ReactMarkdown from "react-markdown";
+import { urlFor } from "@/lib/sanityImageUrl";
+import { PortableText } from "@portabletext/react";
+
+// import ReactMarkdown from "react-markdown";
 // import htmlReactParser from "html-react-parser";
 import Container from "../shared/Container/Container";
 import { StyledWrapper, StyledContent } from "./styles";
@@ -20,6 +24,20 @@ const HisStory: React.FC<HisStoryProps> = ({ content }) => {
     if (element) {
       elementsRef.current.push(element);
     }
+  };
+
+  const PortableTextComponent = {
+    types: {
+      image: ({ value }: { value: any }) => (
+        <Image
+          src={urlFor(value).url()}
+          alt="Image"
+          className="rounded-lg"
+          width={800}
+          height={800}
+        />
+      ),
+    },
   };
 
   useEffect(() => {
@@ -62,7 +80,10 @@ const HisStory: React.FC<HisStoryProps> = ({ content }) => {
         <StyledContent>
           <h2 ref={addElementRef}>how i met her</h2>
           <div ref={addElementRef}>
-            <ReactMarkdown>{content}</ReactMarkdown>
+            <PortableText
+              value={content as any}
+              components={PortableTextComponent}
+            />
           </div>
         </StyledContent>
       </Container>
