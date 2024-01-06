@@ -1,4 +1,6 @@
-import axios from "@/utils/axios";
+// import axios from "@/utils/axios";
+import {client} from '@/lib/sanity';
+import { LoveStory } from "@/lib/interface";
 import HerStory from "@/components/HerStory/HerStory";
 import HisStory from "@/components/HisStory/HisStory";
 import LoveStoryHero from "@/components/LoveStoryHero/LoveStoryHero";
@@ -9,27 +11,29 @@ import VideoPlayer from "@/components/VideoPlayer/VideoPlayer";
 //   id: number;
 // }
 
-async function getLoveStory(id: number) {
-  const res = await axios.get(`love-stories/${id}?populate=*`);
+async function getLoveStory(id: string) {
+  const query = `*[_type == "loveStory" && _id == "${id}"][0]`;
 
-  return res.data;
+  const data = await client.fetch(query, { next: { revalidate: 0 } });
+
+  return data;
 }
 
-export default async function LoveStoryFragments({ id }: { id: number }) {
-  const loveStory = await getLoveStory(id);
+export default async function LoveStoryFragments({ id }: { id: string }) {
+  const loveStory = (await getLoveStory(id)) as LoveStory;
 
   // console.log(loveStory);
 
   return (
     <>
       <LoveStoryHero
-        title={loveStory.data.attributes.title}
-        img={loveStory.data.attributes.main_image.data.attributes.url}
+        title={loveStory.title}
+        img={loveStory.mainImage}
       />
-      <HisStory content={loveStory.data.attributes.his_story} />
-      <HerStory content={loveStory.data.attributes.her_story} />
-      <VideoPlayer videoId={loveStory.data.attributes.youtube_video_id} />
-      <OtherStories />
+      <HisStory content={loveStory.hisStory} />
+      <HerStory content={loveStory.herStory} />
+      <VideoPlayer videoId={loveStory.youtubeVideoId} />
+      {/* <OtherStories /> */}
     </>
   );
 }

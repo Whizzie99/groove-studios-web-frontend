@@ -19,7 +19,7 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
-import aboutImg from "../../../public/images/sample-4.jpg";
+import aboutImg from "../../../public/images/new-assets/couple-holding-hands.jpeg";
 
 const About: React.FC = () => {
   const elementsRef = useRef<HTMLElement[]>([]);

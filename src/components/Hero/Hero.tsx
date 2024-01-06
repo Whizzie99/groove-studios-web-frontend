@@ -14,7 +14,7 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
-import heroImg from "../../../public/images/sample-1.jpeg";
+import heroImg from "../../../public/images/new-assets/couple.jpeg";
 
 const Hero: React.FC = () => {
   const elementsRef = useRef<HTMLElement[]>([]);

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { urlFor } from "@/lib/sanityImageUrl";
+
 import { StyledHero } from "./styles";
 
 interface Props {
@@ -10,7 +12,7 @@ const LoveStoryHero: React.FC<Props> = ({ title, img }) => {
   return (
     <StyledHero>
       <Image
-        src={img}
+        src={urlFor(img).url()}
         alt="sample image"
         fill
         style={{ objectFit: "cover" }}

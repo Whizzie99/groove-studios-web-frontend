@@ -6,6 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import Moment from "react-moment";
+import { urlFor } from "@/lib/sanityImageUrl";
 import { sanitizeUrl } from "@/utils/helpers";
 
 import {
@@ -23,7 +24,8 @@ interface LoveStoryCardProps {
   img?: string;
   title?: string;
   description?: string;
-  date?: string;
+  date?: Date;
+  slug?: string;
 }
 
 const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
@@ -32,6 +34,7 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
   title,
   description,
   date,
+  slug
 }) => {
   const elementsRef = useRef<HTMLElement[]>([]);
   const router = useRouter();
@@ -87,13 +90,15 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
       ref={addElementRef}
       onClick={() => {
         if (title) {
-          router.push(`/lovestories/${id}/${sanitizeUrl(title)}`);
+          // router.push(`/lovestories/${id}/${sanitizeUrl(title)}`);
+          router.push(`/lovestories/${id}/${slug}`);
         }
       }}
     >
       <StyledCardImg>
         <Image
-          src={img || "/images/sample-1.jpeg"}
+          // src={img || "/images/sample-1.jpeg"}
+          src={urlFor(img).url()}
           alt={title || "love story image"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
@@ -105,7 +110,7 @@ const LoveStoryCard: React.FC<LoveStoryCardProps> = ({
         <StyledContentLeft>
           <h3>{title || "no title"}</h3>
           <p>{description?.substring(0, 200)}...</p>
-          <Link href={`/lovestories/${id}/${title}`}>read more</Link>
+          <Link href={`/lovestories/${id}/${slug}`}>read more</Link>
         </StyledContentLeft>
         <StyledContentRight>
           <p>
